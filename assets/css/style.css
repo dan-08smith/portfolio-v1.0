@@ -7,51 +7,28 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
-  
-a {
+
+a, a:hover, a:link, a:active, a:visited {
     color: #ffb727;
     text-decoration: none;
 }
   
-a:hover {
-    color: #ffc85a;
-    text-decoration: none;
+.container {
+    text-align: center;
 }
-  
-/* NAVIGATION BAR SECTION --------------------
---------------------------------------------*/
-.navbar {
-    background: #5e5d5d;
+
+#navbar {
     height: 80px;
-    display: flex;
-    align-items: center;
 }
 
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    width: 100%;
-    align-items: center;
-    padding-right: 50px;
-    padding-left: 50px;
-    margin-right: auto;
-    margin-left: auto;    
+#navbar a {
+    font-size: 20px;
 }
 
-.navbar-item{
-    font-size: 32px;
-    color: white;
-    display: flex;
-    padding: 10px 15px;
-}
-
-/* HERO SECTION ------------------------------
---------------------------------------------*/
 #hero {
-    width: 100%;
-    height: 100vh;
     background: url("../img/bg-img.jpg") top right;
+    height: 100vh;
+    width: 100%;
     background-size: cover;
     position: relative;
 }
@@ -66,28 +43,32 @@ a:hover {
     right: 0;
 }
 
-.hero-container {
+#hero .hero-container {
     position: absolute;
-    bottom: 0;
     top: 0;
     left: 0;
+    bottom: 0;
     right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
     padding: 0 15px;
+}
+
+#hero h6 {
+    color: white;
+    font-size: 20px;
 }
 
 #hero h1 {
     margin: 0 0 10px 0;
     font-size: 90px;
-    color: #fff;
-  }
+    color: white;
+}
   
 #hero h4 {
-    color: #eee;
+    color: white;
     margin-top: 0px;
     margin-bottom: 50px;
     font-size: 20px;
@@ -95,165 +76,70 @@ a:hover {
     letter-spacing: 1px;
 }
 
-#hero p {
-    color: white;
-}
-
-.hero-links {
+.links-container {
     display: flex;
-    grid-gap: 40px;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
-.hero-links img {
-    margin: 0 7px 0 0;
-    max-width: 100%;
+.links-container img {
+    float: center;
     max-height: 100%;
-    float: left;
+    max-width: 100%;
+    margin: 0 7px 0 0;
 }
 
-
-/* GENERIC SECTIONS --------------------------
---------------------------------------------*/
-section {
-    padding: 60px 0;
-}
-  
-.section-bg {
-    background-color: white;
-}
-  
 .section-header {
-    text-align: center;
-    padding: 30px 0;
-    position: relative;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
-  
+
 .section-header h3 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    padding-bottom: 0;
-    color: black;
-    position: static;
-    z-index: auto;
+    font-size: 25px;
 }
-  
+
 .section-header h1 {
-    position: static;
-    top: 70px;
-    color: black;
-    left: 0;
-    right: 0;
-    z-index: auto;
-    font-weight: 700;
-    font-size: 52px;
-    line-height: 0;
-}
-  
-.section-header p {
-    position: relative;
-    top: 30px;
-    z-index: 2;
+    font-size: 55px;
 }
 
-/* ABOUT SECTION -----------------------------
---------------------------------------------*/
-.about-container {
-    align-items: center;
-    justify-content: center;
-    padding-left: 75px;
-    padding-right: 75px;
+#about .row {
+    text-align: left;
+    padding-bottom: 25px;
 }
 
-.about-item {
-    height: 150px;
-    padding: 15px 50px 15px 50px;
+.content-container {
+    display: flex;
+    float: center;
 }
 
-.about-item img {
-    height: 100px;
-    width: 100px;
-    float: left;
-    margin: 0 35px 0 0;
-}
-
-
-
-
-/* CV SECTION --------------------------------
---------------------------------------------*/
-.cv-link {
-    align-items: center;
-}
-
-.cv-link img {
-    margin: 0 7px 0 0;
+.content-container img {
     max-width: 100%;
     max-height: 100%;
+    margin: 0 20px 0 0;
 }
 
-.cv-item {
-    margin: center;
-    width: 50%;
+#about .container {
+    padding-bottom: 20px;
+}
+#cv .row {
+    text-align: left;
 }
 
-
-.cv-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
-    padding: 100px;
+.skills-container .row p {
+    margin: 0 0 5px 0;
+    font-size: 15px;
 }
 
-
-
-/* PORTFOLIO SECTION--------------------------
---------------------------------------------*/
-
-
-.portfolio-item {
-    background: lightgrey;
-    border-color: #131313;
-    text-align: center;
-    justify-content: center;
+.skills-container .row .progress {
+    margin: 0 0 5px 0;
 }
 
-.portfolio-container {
-    display: grid;
-    margin: auto;
-    height: 700px;
-    padding: 50px;
+#portfolio .row {
+    padding-bottom: 100px;
 }
 
-.coming-soon {
-    text-align: center;
-}
-
-/* CONTACT SECTION ---------------------------
---------------------------------------------*/
-.contact-item {
-    background: lightgrey;
-    border-color: black;
-    margin: auto;
-    width: 50%;
-}
-
-.contact-container {
-    display: grid;
-    margin: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    padding: 50px;
-}
-
-.contact-item h1 {
-    font-size: 18px;
-}
-
-.footer {
-    text-align: center;
-}
-
-.back-to-top-container {
-    padding: 20px;
+#contact h5, #contact h6{
+    padding-bottom: 20px;
 }
