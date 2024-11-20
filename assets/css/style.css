@@ -17,6 +17,10 @@ a, a:hover, a:link, a:active, a:visited {
     text-align: center;
 }
 
+.container img {
+    padding-bottom: 25px;
+}
+
 #navbar {
     height: 80px;
 }
