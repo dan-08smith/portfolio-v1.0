@@ -1,7 +1,7 @@
 # dan-08smith.github.io
 
 <p>
-  <a href="https://dan-08smith.github.io/" target="_blank" rel="noreferrer noopener">
+  <a href="https://d-smith.co.uk/" target="_blank" rel="noreferrer noopener">
     Portfolio Website Link
 </p>
     
